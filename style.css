@@ -1,0 +1,91 @@
+/* Style for the main heading */
+body {
+  background-color: rgb(182, 182, 182); /* whole page background */
+  margin: 0; /* remove default margin */
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: rgb(41, 39, 39); 
+  color: red;          /* Make the text red */
+}
+h2 {
+  
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(41, 39, 39); 
+  color: red;          /* Make the text red */
+}
+
+/* Style for all paragraphs */
+p {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(27, 27, 27);         /* Change text color to blue */
+  font-size: 18px;     /* Increase the font size */
+}
+
+p2 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(27, 27, 27);         /* Change text color to blue */
+  font-size: 18px;     /* Increase the font size */
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(41, 39, 39);
+  text-align: center;
+  color: white;         /* Change text color to blue */
+  font-size: 18px;     /* Increase the font size */
+  
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  background-color: rgb(41, 39, 39);
+  padding: 1rem;
+  position: sticky; /* stays on top when scrolling */
+  top: 0;
+}
+
+/* Navbar list */
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; 
+}
+
+/* Navbar items */
+nav ul li {
+  text-align: center;
+  margin-left: 20px;
+}
+
+/* Navbar links */
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: #ffffff; /* light teal on hover */
+}
+
+
+
+
+
