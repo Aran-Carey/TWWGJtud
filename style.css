@@ -1,8 +1,9 @@
-
 body {
   background-color: rgb(108, 107, 107);
   margin: 0;
 }
+
+
 div {
   background-color: rgb(108, 107, 107);
 
@@ -12,21 +13,18 @@ header{
   font-size: 0px; 
   text-align: center;
   background-color: rgb(41, 39, 39);
-
-
-
-
-
-
 }
+
+
 h1 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   background-color: rgb(41, 39, 39); 
   color: red;        
 }
+
+
 h2 {
-  
   font-family: 'Poppins', sans-serif;
   background-color: rgb(41, 39, 39); 
   color: red;         
@@ -36,13 +34,9 @@ h2 {
 p {
   font-family: 'Poppins', sans-serif;
   color: rgb(27, 27, 27);        
-  font-size: 18px;    
+  font-size: 18px;  
+}  
 
-p2 {
-  font-family: 'Poppins', sans-serif;
-  color: rgb(27, 27, 27);         
-  font-size: 18px;     
-}
 
 h5 {
   font-family: 'Poppins', sans-serif;
@@ -70,7 +64,6 @@ nav {
 
 
 nav ul {
-  
   list-style: none;
   display: flex;
   list-style: none;
@@ -106,9 +99,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .framed {
-  width: 150px;             
-  height: 150px;
+  width: 350px;             
+  height: 300px;
   border: 5px solid #333;    
   border-radius: 10px;      
   margin: 15px;            
