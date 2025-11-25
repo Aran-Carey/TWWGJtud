@@ -56,7 +56,8 @@ h5 {
 
 
 nav {
-  background-color: rgb(41, 39, 39);
+  background-image: url("../pics/AdobeExpressfile_transparent.png" alt="My Website Title");
+  background-size: cover;
   padding: 1rem;
   position: sticky; 
   top: 0;
@@ -107,4 +108,5 @@ body {
   border-radius: 10px;      
   margin: 15px;            
 }
+
 
