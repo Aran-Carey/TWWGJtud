@@ -4,29 +4,30 @@
 <link rel="stylesheet" href="../style/style.css">
 <title>Wheels on Fire! - About Us</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<style>
-    img {
-      width: 200px;   
-      height: auto;  
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .textbox {
-      width: 30%;
-      background-color: rgb(108, 107, 107);
-      color: whitesmoke;
-    }
-    .imagebox {
-      width: 30%;
-      background-color: rgb(108, 107, 107);
-      border: 8px;
-      border-color:rgb(77, 78, 78)
-    }
-  </style>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
 </head>
+
 <div>
 <nav>
     <img src="../pics/AdobeExpressfile_transparent.png" alt="My Website Title">
@@ -42,21 +43,13 @@
 
 </header>
 <body>
-    <h1>About Us!</h1>
-    <h1>Welcome to the firey family at "Wheels on Fire&copy;".</h1>
-    <h5>Here we bring you the hottest deals on the raddest cars and in the bestest location for my favourite of the family.</h5>
+    <h2>About Us!</h2>
+    <h3>Welcome to the firey family at "Wheels on Fire&copy;".</h3>
+    <h3>Here we bring you the hottest deals on the raddest cars and in the bestest location for my favourite of the family.</h3>
 <div class="container">
-    <img class="imagebox" src="../pics/johnpng.png" alt="Picture of John O'Reiley.">
-    <img class="imagebox" src="../pics/peoplepng.png" alt="Picture of the Rest of the Staff.">
-    <img class="imagebox" src="../pics/carpng.png" alt="Picture of a Car.">
-</div>
-<div class="container">
-    <h1 class="textbox" style="color: black;"><b><u>Our Founder: Mr. John O'Reiley Himself.</u></b></h1>
-    <h1 class="textbox" style="color: black;"><b><u>Meet The Team!</u></b></h1>
-    <h1 class="textbox" style="color: black;"><b><u>Why Choose Us?</u></b></h1>
-</div>
-<div class="container">
-    <p class="textbox">Hello everyone I'm the founder and CEO of Wheels on Fire&copy;. It's a pleasure to let you to get to know me. Lets go throught a few notable things about myself, to let you get to know me on a more personal note. 
+    <div class="imagebox"><img  src="../pics/johnpng.png" alt="Picture of John O'Reiley."></div>
+    <div class="text1box"><h1  style="color: black;"><b><u>Our Founder: Mr. John O'Reiley Himself.</u></b></h1></div>
+      <div class="text2box"><p>Hello everyone I'm the founder and CEO of Wheels on Fire&copy;. It's a pleasure to let you to get to know me. Lets go throught a few notable things about myself, to let you get to know me on a more personal note. 
       <br>
       <br>
       <b>1.</b> I was born in Dublin, Ireland on 09/10/1990, making me 35 years old.
@@ -69,8 +62,10 @@
       <br>
       <br>
       I hope you were able to get to know me a little better, and please come by to Wheels on Fire&copy;, you won't regret it.
-    </p>
-    <p class="textbox">Meet the team at Wheels on Fire&copy;, who are more than happy to be of assisstance to anyone and everyone who come through the double doors.
+    </p></div>
+    <div class="imagebox"><img  src="../pics/peoplepng.png" alt="Picture of the Rest of the Staff."></div>
+    <div class="text1box"><h1  style="color: black;"><b><u>Meet The Team!</u></b></h1></div>
+     <div class="text2box"><p>Meet the team at Wheels on Fire&copy;, who are more than happy to be of assisstance to anyone and everyone who come through the double doors.
       <br>
       <br>
       Every single person on the team, including the cleaners are car euthusiasts, like myself, and will know everyone you might ask about and more.
@@ -81,10 +76,13 @@
       <br>
       And on behalf of the entire team, we look forward to seeing you at Wheels on Fire&copy; and joining our firey family, or even working alongside the wonderful team of car euthusiasts. 
       <br>
-      <b><u>Here's a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a> to a video of the shop where you can a POV of what's it like.</u></b>
-    </p>
+      <b><u>Here's a <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a> to a video of the shop where you can a POV of what's it like.</u></b>
+     </p></div>
 
-    <p class="textbox">Now, why should you come to Wheels on Fire&copy;? Other than the atmostsphere, the workers, or even me.
+  <div class="imagebox"><img  src="../pics/carpng.png" alt="Picture of a Car."></div>
+  <div class="text1box"><h1  style="color: black;"><b><u>Why Choose Us?</u></b></h1></div>
+
+    <div  class="text2box"><p>Now, why should you come to Wheels on Fire&copy;? Other than the atmostsphere, the workers, or even me.
       <br>
       <br>
       Well here at Wheels on Fire&copy;, we have the hottest deals here, and that's what sets us apart. Because here at Wheels on Fire&copy;, <b><u>our prices are 10% lower than the national average</u></b>, and are cars are always cleaner, with a <b><u>100% cash back guarrentee if you don't like the car after 1 month.</u></b> <i style="font-size: 7px;">(terms and condidtions apply)</i>
@@ -94,10 +92,12 @@
       <br>
       <br>
       So head down to Wheels on Fire&copy;, where you'll get the hottest deals on the raddest cars, and join the firey family!
-    </p>
+    </p></div>
 </div>
 </body>
 <footer>
+  <br>
+  <br>
     <p>Copyright &copy; Wheels on Fire, 2025</p>
 </footer>
 </html>

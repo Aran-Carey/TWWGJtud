@@ -7,14 +7,31 @@
 </head>
 
 
-<header>
-  <style>
 
-    img {
-      width: 200px;   
-      height: auto;  
-    }
-  </style>
+
+<header>
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
   
   <nav>
     <img src="../pics/AdobeExpressfile_transparent.png" alt="My Website Title">
@@ -33,7 +50,7 @@
     <p>If you <u>have any queries</u> about the Wheels on Fire operation please <u>feel free to contact us 
       through the below links.</u>
     </p>
-    <p><a href="phone_num.com">+353 XX XXX XXX</a></p>
+    <p><a class="link" href="phone_num.com">+353 XX XXX XXX</a></p>
     
 
 <body>
@@ -51,13 +68,16 @@
 
 </body>
 
-
+<footer>
+  <br>
+  <br>
+    <p>Copyright &copy; Wheels on Fire, 2025</p>
+</footer>
 
 
 
 
 </html>
-
 
 
 
