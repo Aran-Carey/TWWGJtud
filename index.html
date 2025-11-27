@@ -7,6 +7,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 <header>
   <style>
@@ -41,10 +60,10 @@
 
   
   <a href="instagram.com">
-  <img src="Web_Dev_Project/pics/pexels-photo-170811.jpeg" class="framed" alt="Image 2">
+  <img src="Web_Dev_Project/pics/pexels-photo-170811.jpeg" class="framed" alt="Image 1">
   </a>
   <a href="facebook.com">
-  <img src="Web_Dev_Project/pics/octavia-vrs-lead_0.jpg" class="framed" alt="Image 3">
+  <img src="Web_Dev_Project/pics/octavia-vrs-lead_0.jpg" class="framed" alt="Image 2">
   </a>
   <a href="facebook.com">
   <img src="Web_Dev_Project/pics/classic-car-photos.jpg" class="framed" alt="Image 3">
@@ -53,12 +72,15 @@
 </body1>
 
 
-
+<footer>
+  <br>
+  <br>
+    <p>Copyright &copy; Wheels on Fire, 2025</p>
+</footer>
 
 
 
 </html>
-
 
 
 
