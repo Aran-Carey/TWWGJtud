@@ -199,3 +199,9 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+form {
+  font-size: 20px;
+  padding-left: 30px;
+  color: #ffffff;
+}
