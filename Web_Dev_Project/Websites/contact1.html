@@ -1,0 +1,30 @@
+<script>
+    function validateForm() {
+        let name = document.forms["contactForm"]["name"].value;
+        let email = document.forms["contactForm"]["email"].value;
+        let message = document.forms["contactForm"]["message"].value;
+
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (name.trim() === "") {
+            alert("Name cannot be empty.");
+            return false;
+        }
+
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email.");
+            return false;
+        }
+
+        if (message.trim().length < 10) {
+            alert("Message must be at least 10 characters.");
+            return false;
+        }
+
+        // ✔ Refresh page after successful submit
+        alert("Form submitted successfully!");
+        location.reload();
+
+        return false; // prevents default form submit so the reload happens
+    }
+</script>
