@@ -1,30 +1,53 @@
-<script>
-    function validateForm() {
-        let name = document.forms["contactForm"]["name"].value;
-        let email = document.forms["contactForm"]["email"].value;
-        let message = document.forms["contactForm"]["message"].value;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
 
-        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    <script>
+        function validateForm() {
+            let name = document.forms["contactForm"]["name"].value;
+            let email = document.forms["contactForm"]["email"].value;
+            let message = document.forms["contactForm"]["message"].value;
 
-        if (name.trim() === "") {
-            alert("Name cannot be empty.");
-            return false;
+            // Check name
+            if (name.trim() === "") {
+                alert("Name cannot be empty.");
+                return false;
+            }
+
+            // Check email structure
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Check message length
+            if (message.trim().length < 10) {
+                alert("Message must be at least 10 characters long.");
+                return false;
+            }
+
+            return true; // allow form to submit
         }
+    </script>
+</head>
 
-        if (!emailPattern.test(email)) {
-            alert("Please enter a valid email.");
-            return false;
-        }
+<body>
+    <h1>Contact Us</h1>
 
-        if (message.trim().length < 10) {
-            alert("Message must be at least 10 characters.");
-            return false;
-        }
+    <form name="contactForm" onsubmit="return validateForm()">
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
 
-        // ✔ Refresh page after successful submit
-        alert("Form submitted successfully!");
-        location.reload();
+        <label>Email:</label><br>
+        <input type="text" name="email"><br><br>
 
-        return false; // prevents default form submit so the reload happens
-    }
-</script>
+        <label>Message:</label><br>
+        <textarea name="message"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
